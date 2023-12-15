@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: todo-app
+  name: ussdapp
 spec:
   containers:
-  - name: todo-app
-    image: abhishekf5/todoapp:v1
+  - name: ussdapp
+    image: tumbimsiska/ussdapp:v1
     ports:
-    - containerPort: 8000
+    - containerPort: 8088
