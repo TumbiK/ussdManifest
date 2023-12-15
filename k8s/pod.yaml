@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ussdapp
+  name: ussd-app
 spec:
   containers:
-  - name: ussdapp
+  - name: ussd-app
     image: tumbimsiska/ussdapp:v1
     ports:
-    - containerPort: 8088
+    - containerPort: 8000

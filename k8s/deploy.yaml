@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ussdapp
+  name: ussd-app
   labels:
     app: ussdapp
 spec:
@@ -15,7 +15,7 @@ spec:
         app: ussdapp
     spec:
       containers:
-      - name: ussdapp
+      - name: ussd
         image: tumbimsiska/ussdapp:v1
         ports:
-        - containerPort: 8088
+        - containerPort: 8000
